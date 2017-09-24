@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  root :to => "dishes#index"
   # Routes for the Best_at resource:
   # CREATE
   get "/best_ats/new", :controller => "best_ats", :action => "new"
