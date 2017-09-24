@@ -1,6 +1,7 @@
 class BestAtsController < ApplicationController
   def index
-    @best_ats = BestAt.page(params[:page]).per(10)
+    @q = BestAt.ransack(params[:q])
+    @best_ats = @q.result(:distinct => true).page(params[:page]).per(10)
 
     render("best_ats/index.html.erb")
   end
