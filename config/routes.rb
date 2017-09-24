@@ -1,4 +1,21 @@
 Rails.application.routes.draw do
+  # Routes for the Best_at resource:
+  # CREATE
+  get "/best_ats/new", :controller => "best_ats", :action => "new"
+  post "/create_best_at", :controller => "best_ats", :action => "create"
+
+  # READ
+  get "/best_ats", :controller => "best_ats", :action => "index"
+  get "/best_ats/:id", :controller => "best_ats", :action => "show"
+
+  # UPDATE
+  get "/best_ats/:id/edit", :controller => "best_ats", :action => "edit"
+  post "/update_best_at/:id", :controller => "best_ats", :action => "update"
+
+  # DELETE
+  get "/delete_best_at/:id", :controller => "best_ats", :action => "destroy"
+  #------------------------------
+
   devise_for :users
   # Routes for the User resource:
   # READ
