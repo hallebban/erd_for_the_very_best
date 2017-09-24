@@ -1,6 +1,6 @@
 class BestAtsController < ApplicationController
   def index
-    @best_ats = BestAt.all
+    @best_ats = BestAt.page(params[:page]).per(10)
 
     render("best_ats/index.html.erb")
   end
