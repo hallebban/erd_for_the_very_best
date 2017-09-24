@@ -1,0 +1,1 @@
+{"name":"ERD for The Very Best","repository":"https://github.com/hallebban/erd_for_the_very_best","env":{"CLOUDINARY_CLOUD_NAME":{"required":true},"CLOUDINARY_API_KEY":{"required":true},"CLOUDINARY_API_SECRET":{"required":true},"ROLLBAR_ACCESS_TOKEN":{"required":true}}}
